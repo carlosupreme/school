@@ -4,7 +4,13 @@ export default function Router() {
   const $MAIN = document.querySelector("main");
   let { hash } = location;
 
-  if (localStorage.getItem("login")) {
+  $MAIN.innerHTML = "";
+
+  let itsme =
+    localStorage.getItem("username") === "carlosupreme" &&
+    localStorage.getItem("password") === "carlos1030";
+
+  if (itsme) {
     if (!hash || hash === "#" || hash === "#/") {
       $MAIN.innerHTML = "Home";
     } else if (hash.includes("school")) {
@@ -13,7 +19,7 @@ export default function Router() {
       $MAIN.innerHTML = "<h1>Blog page</h1>";
     }
   } else {
-    $MAIN.insertAdjacentElement("afterbegin",Login());
+    $MAIN.insertAdjacentElement("afterbegin", Login());
   }
 
   console.log(`router a cambiado a ${hash}`);

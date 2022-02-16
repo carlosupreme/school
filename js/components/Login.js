@@ -14,18 +14,28 @@ export default function Login() {
       name="nombre"
     />
   </label>
-  <label for="name">
+  <label for="pass">
   Contraseña
   <input
     autocomplete="off"
-    type="text"
-    id="nombre"
+    type="password"
+    id="pass"
     required
-    name="nombre"
+    name="pass"
   />
 </label>
   <input type="submit" value="Start" />
 </form>
   `;
+
+  document.addEventListener("submit", e=>{
+    if(e.target !== $div.querySelector("form")) return false;
+    e.preventDefault();
+    localStorage.setItem("username", e.target.nombre.value)
+    localStorage.setItem("password", e.target.pass.value)
+
+    location.hash = "#/";
+    location.reload();
+  })
   return $div;
 }
