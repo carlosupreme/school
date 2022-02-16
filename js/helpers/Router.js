@@ -1,5 +1,6 @@
 import Home from "../components/Home.js";
 import Login from "../components/Login.js";
+import SchoolHome from "../components/school/SchoolHome.js";
 
 export default function Router() {
   const $MAIN = document.querySelector("main");
@@ -15,7 +16,7 @@ export default function Router() {
     if (!hash || hash === "#" || hash === "#/") {
       $MAIN.insertAdjacentElement("afterbegin", Home());
     } else if (hash.includes("school")) {
-      $MAIN.innerHTML = "<h1>School page</h1>";
+      $MAIN.insertAdjacentElement("afterbegin", SchoolHome())
     } else if (hash.includes("blog")) {
       $MAIN.innerHTML = "<h1>Blog page</h1>";
     }
