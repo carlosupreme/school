@@ -1,3 +1,4 @@
+import Home from "../components/Home.js";
 import Login from "../components/Login.js";
 
 export default function Router() {
@@ -12,7 +13,7 @@ export default function Router() {
 
   if (itsme) {
     if (!hash || hash === "#" || hash === "#/") {
-      $MAIN.innerHTML = "Home";
+      $MAIN.insertAdjacentElement("afterbegin", Home());
     } else if (hash.includes("school")) {
       $MAIN.innerHTML = "<h1>School page</h1>";
     } else if (hash.includes("blog")) {
