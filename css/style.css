@@ -3,6 +3,8 @@
   --text-color: #333;
   --max-width: 1200px;
   --font-family: "Poppins", sans-serif;
+  --header-color: #fe8e84;
+  --header-height: 5rem;
 }
 
 html {
@@ -29,9 +31,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .primary-header {
-  background-color: royalblue;
+  height: var(--header-height);
 }
 .primary-header .menu-btn {
   display: none;
@@ -41,15 +42,19 @@ body {
 }
 .primary-header div {
   padding: 1rem;
-  color: #fefefe;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text-color);
 }
 
 .primary-header ul {
+  color: #fefefe;
+  background-color: var(--header-color);
   display: flex;
   gap: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem 0;
 }
 
 .primary-header ul li {
@@ -58,6 +63,15 @@ body {
 
 .primary-header li a {
   color: inherit;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.primary-header li a.active,
+.primary-header li a:hover {
+  border: none;
+  background-color: #f15648;
 }
 
 @media (max-width: 500px) {
@@ -166,7 +180,6 @@ main {
 .home .bg {
   width: 50%;
   background: url(../img/bg_landing_2.webp) no-repeat center center / contain;
-  /* color: #FE8E84; For the header bro*/
 }
 .home div:not(.bg) {
   width: 50%;
@@ -188,13 +201,13 @@ main {
   .home h2 {
     font-size: var(--step-1);
   }
-  
+
   .home p {
     font-size: var(--step-0);
-  } 
+  }
 
   .home .bg {
-    width:40%;
+    width: 40%;
   }
   .home div:not(.bg) {
     width: 60%;
@@ -205,13 +218,13 @@ main {
   .home h2 {
     font-size: var(--step-2);
   }
-  
+
   .home p {
     font-size: var(--step-1);
-  } 
+  }
 
   .home .bg {
-    width:100%;
+    width: 100%;
   }
 
   .home div:not(.bg) {
