@@ -233,3 +233,35 @@ main {
     justify-content: flex-start;
   }
 }
+
+main {
+  border: thin solid rgba(0, 0, 0, 0.5);
+}
+.school-page h1 {
+  text-align: center;
+}
+
+.school-page :is(.schoolname-input, button) {
+  padding: 0.5rem 1rem;
+  border: thin solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+
+.school-page button {
+  background-color: var(--bg-color);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.school-page button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+
+.school-page .links {
+  margin-block: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
