@@ -8,10 +8,32 @@ export default function SchoolHome() {
       `<input class="schoolname-input" type="text" placeholder="Nombre de tu escuela"> <button>Done</button>`
     }</h1>
 
-    <nav class="links">
-        <a href="#/school/info">View Table</a>
-        <a href="#/school/quizes">Make a Quiz</a>
-    </nav>
+    <div class="cards">
+      <div class="card">
+        <h2 class="title">Table for school information</h2> <br>
+        <div class="description">
+          <p>
+          In this page you can create a small table with the data you want about your school, such as  <br><br>
+            <li>the link to each class,</li>
+            <li>the link to the virtual platform,</li>
+            <li>the link to your grades.</li>
+            <li>Everything you want!</li> <br>
+          This table will be stored in the localstorage of your browser... so be careful what you delete 
+          </p> 
+        </div> <br>
+        <a class="cta" href="#/school/show_table">Start a table</a>
+      </div>
+      <div class="card">
+        <h2 class="title">Quizes for an exam or study</h2><br>
+        <div class="description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis vel nam magni, totam non, quos ea corrupti laudantium amet a nemo, explicabo fugiat. Quidem et ad sapiente id, corrupti maxime?</p>
+        </div><br>
+        <div>
+          <a class="cta" href="#/school/create_quiz">Make a quiz</a>
+          <a class="cta" href="#/school/show_quizes">Start a quiz</a>
+        </div>
+      </div>
+    </div>
   `
   );
 

@@ -234,9 +234,6 @@ main {
   }
 }
 
-main {
-  border: thin solid rgba(0, 0, 0, 0.5);
-}
 .school-page h1 {
   text-align: center;
 }
@@ -258,10 +255,42 @@ main {
   color: var(--bg-color);
 }
 
-.school-page .links {
+.school-page .cards {
   margin-block: 2rem;
   width: 100%;
+  min-height: calc(100vh - 12rem - var(--header-height));
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.school-page .cards > .card {
+  flex-basis: 400px;
+  flex-grow: 1;
+  border: thin solid rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+.school-page .cards .card .title {
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: thin solid rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+.school-page .card .cta {
+  padding:  0.5rem 1rem;
+  border: thin solid transparent;
+  background-color: var(--header-color);
+  color: var(--bg-color);
+  transition: background 0.3s, color 0.2s;
+  border-radius: 0.5rem;
+}
+
+.school-page .card .cta:hover {
+  border-color: var(--header-color);
+  color: var(--header-color);
+  background-color: var(--bg-color);
 }
