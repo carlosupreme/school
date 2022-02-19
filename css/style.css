@@ -281,7 +281,7 @@ main {
   width: 100%;
 }
 .school-page .card .cta {
-  padding:  0.5rem 1rem;
+  padding: 0.5rem 1rem;
   border: thin solid transparent;
   background-color: var(--header-color);
   color: var(--bg-color);
@@ -293,4 +293,29 @@ main {
   border-color: var(--header-color);
   color: var(--header-color);
   background-color: var(--bg-color);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table :is(td, th) {
+  padding: 0.5rem;
+  border: thin solid rgba(0, 0, 0, 0.5);
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table  th {
+  padding-block: 0.8rem;
+  text-align: start;
+  background-color: var(--header-color);
+  color: #fefefe;
+}
+
+main {
+  overflow: auto;
 }

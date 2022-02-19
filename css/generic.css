@@ -55,3 +55,7 @@ a:hover {
   opacity: 0.8;
   border-bottom-color: currentColor;
 }
+
+.text-center {
+  text-align: center;
+}
