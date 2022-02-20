@@ -42,6 +42,15 @@ export default function show_table() {
         </td>
       </tr>
       <tr>
+      <td>MOOC</td>
+      <td>For Courses on MOOC complementary</td>
+      <td class="text-center">
+        <a target="_blank" href="https://mooc.tecnm.mx/dashboard">
+          MOOC
+        </a>
+      </td>
+    </tr>
+      <tr>
         <td>Tecnm</td>
         <td>Oficial Page for the school</td>
         <td class="text-center">
