@@ -1,0 +1,22 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "Apuntes de la carrera y mas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosupreme/school.git"
+  },
+  "author": "Carlos Sosa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosupreme/school/issues"
+  },
+  "homepage": "https://github.com/carlosupreme/school#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
